@@ -24,10 +24,16 @@ for(let i = 0; i <= 6; i++){
 // three more guest to added
 console.log("Guys, I have found a bigger dinning table, so I am inviting three more guest.\n\n");
 
-sr = ["Ali Hyder", "Ahmed Nawaz", "Farooq", "Farooq", "Awais", "Khalid", "Zeeshan", "Adil", "Ahatisham", "Atif" ];
-
-for(let i = 0; i <= 9; i++){
-    console.log(sr[i]);
+function append(srt: Array<String>, item:String){
+srt.push(item);
+return srt;
 }
+
+const srt = ["Ali Hyder", "Ahmed Nawaz", "Farooq", "Farooq", "Awais", "Khalid", "Zeeshan", "Adil", "Ahatisham"];
+const item = "Atif";
+
+const newSrt = append(srt, item);
+
+console.log(newSrt);
 
 console.log("You all are invited.");
