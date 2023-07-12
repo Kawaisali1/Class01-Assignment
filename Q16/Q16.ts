@@ -3,7 +3,7 @@ guests to invite to dinner. */
 
 var sr = ["Zubair", "Farooq", "Farooq", "Awais", "Zeeshan", "Adil", "Ahatishan"];
 
-for (let i = 0; i <= 6; i++ ){
+for (let i = 0; i <= sr.length; i++ ){
     console.log(sr[i] + ", the dinning time is 8:00 PM. I would like you to be there on mentioned venue.");
     
 }
@@ -16,26 +16,20 @@ console.log("\n\n");
 
 sr[0] = "Ahmed Nawaz";
 
-for(let i = 0; i <= 6; i++){
+for(let i = 0; i <= sr.length; i++){
     console.log(sr[i] + ", the dinning time is 8:00 PM. I would like you to be there on mentioned venue.");
     
 } 
 
 // three more guest to added
-console.log("Guys, I have found a bigger dinning table, so I am inviting three more guest.\n\n");
+console.log("\nGuys, I have found a bigger dinning table, so I am inviting three more guest.\n\n");
 
-function append(srt: Array<String>, item:String){
-srt.push(item);
-return srt;
-}
+sr = ["Ali Hyder", "Ahmed Nawaz", "Farooq", "Farooq", "Khalid", "Awais", "Zeeshan", "Adil", "Ahatishan"];
 
-const srt = ["Ali Hyder", "Ahmed Nawaz", "Farooq", "Farooq", "Awais", "Khalid", "Zeeshan", "Adil", "Ahatisham"];
-const item = "Atif";
+sr.push("Atif");
 
-const newSrt = append(srt, item);
-
-for (let i = 0; i <= 9; i++){
-console.log(newSrt[i])
+for (let i = 0; i < sr.length; i++){
+console.log(sr[i])
 }
 
 console.log("You all are invited.");
