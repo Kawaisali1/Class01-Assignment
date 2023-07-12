@@ -23,3 +23,15 @@ for (var i = -5; i < sr.length; i++) {
     console.log(sr[sr.length - 1] + ", sorry to say I wouldn't be able to invite you.");
     sr.pop();
 }
+console.log("\n");
+for (var i = 0; i <= sr.length - 1; i++) {
+    console.log(sr[i]);
+}
+console.log("You both are considered for dinner.");
+sr.pop();
+sr.pop();
+console.log();
+for (var i = 0; i == 0; i++) {
+    console.log(sr[i]);
+}
+console.log("\nSorry there will be no dinner today because of personal reasons.");
