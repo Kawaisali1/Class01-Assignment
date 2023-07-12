@@ -20,5 +20,7 @@ function append(srt, item) {
 var srt = ["Ali Hyder", "Ahmed Nawaz", "Farooq", "Farooq", "Awais", "Khalid", "Zeeshan", "Adil", "Ahatisham"];
 var item = "Atif";
 var newSrt = append(srt, item);
-console.log(newSrt);
+for (var i = 0; i <= 9; i++) {
+    console.log(newSrt[i]);
+}
 console.log("You all are invited.");
