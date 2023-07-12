@@ -13,8 +13,12 @@ for (var i = 0; i <= 6; i++) {
 }
 // three more guest to added
 console.log("Guys, I have found a bigger dinning table, so I am inviting three more guest.\n\n");
-sr = ["Ali Hyder", "Ahmed Nawaz", "Farooq", "Farooq", "Awais", "Khalid", "Zeeshan", "Adil", "Ahatisham", "Atif"];
-for (var i = 0; i <= 9; i++) {
-    console.log(sr[i]);
+function append(srt, item) {
+    srt.push(item);
+    return srt;
 }
+var srt = ["Ali Hyder", "Ahmed Nawaz", "Farooq", "Farooq", "Awais", "Khalid", "Zeeshan", "Adil", "Ahatisham"];
+var item = "Atif";
+var newSrt = append(srt, item);
+console.log(newSrt);
 console.log("You all are invited.");
