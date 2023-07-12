@@ -34,6 +34,8 @@ const item = "Atif";
 
 const newSrt = append(srt, item);
 
-console.log(newSrt);
+for (let i = 0; i <= 9; i++){
+console.log(newSrt[i])
+}
 
 console.log("You all are invited.");
