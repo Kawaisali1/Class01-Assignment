@@ -4,20 +4,21 @@ before closing the program.*/
 
 /*They think of something you could store in a TypeScript Object. Write a program that creates Objects 
 containing these items.*/
-let cities = ["Karachi", "Berlin", "Sofia", "Veina", "Qatar City", "Dubai"]
-let ob ={
-    a: cities[0],
-    b: cities[1],
-    c: cities[2],
-    d: cities[3],
-    e: cities[4],
-    f: cities[5],
-    // g: cities[y],
+let citiesCopy = ["Karachi", "Berlin", "Sofia", "Veina", "Qatar City", "Dubai"]
+let obCopy ={
+    a: citiesCopy[0],
+    b: citiesCopy[1],
+    c: citiesCopy[2],
+    d: citiesCopy[3],
+    e: citiesCopy[4],
+    f: citiesCopy[5],
+    // g: citiesCopy[y],
 }
 
-console.log(ob.a);
-console.log(ob.b);
-console.log(ob.c);
-console.log(ob.d);
-console.log(ob.e);
-console.log(ob.f);
+console.log(obCopy.a);
+console.log(obCopy.b);
+console.log(obCopy.c);
+console.log(obCopy.d);
+console.log(obCopy.e);
+console.log(obCopy.f);
+// console.log(obCopy.g);
