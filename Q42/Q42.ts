@@ -4,19 +4,6 @@
 // to see that the list has actually been modified.
 // */
 
-
-// function show_magicians(){
-//     function make_great(a:String){
-//     let magicianName = ['Harry Houdini', 'Dynamo', 'David Copperfield', 'Criss Angel', 'David Blaine']
-//     for(let i = 0; i < magicianName.length; i++)
-//     console.log(magicianName[i]);
-    
-//         console.log(magicianName.join(a));
-//     }
-// }
-
-// show_magicians();
-
 function make_great(magicians: string[]) {
     for (let i = 0; i < magicians.length; i++) {
       magicians[i] += ", the Great.";
