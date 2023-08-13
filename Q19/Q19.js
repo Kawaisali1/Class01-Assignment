@@ -1,22 +1,10 @@
-/* More Guests: You just found a bigger dinner table, so now more space is available. Think of three more
-guests to invite to dinner. */
-var sr = ["Zubair", "Farooq", "Farooq", "Awais", "Zeeshan", "Adil", "Ahatishan"];
-for (var i = 0; i <= sr.length; i++) {
-    console.log(sr[i] + ", the dinning time is 8:00 PM. I would like you to be there on mentioned venue.");
-}
-console.log("\n\n");
-console.log(sr[0] + " would not be able to make it to the dinner.");
-console.log("\n\n");
-sr[0] = "Ahmed Nawaz";
-for (var i = 0; i <= sr.length; i++) {
-    console.log(sr[i] + ", the dinning time is 8:00 PM. I would like you to be there on mentioned venue.");
-}
-// three more guest to added
-console.log("\nGuys, I have found a bigger dinning table, so I am inviting three more guest.\n\n");
-sr = ["Ali Hyder", "Ahmed Nawaz", "Farooq", "Farooq", "Khalid", "Awais", "Zeeshan", "Adil", "Ahatishan"];
-sr.push("Atif");
-for (var i = 0; i < sr.length; i++) {
-    console.log(sr[i]);
-}
-console.log("You all are invited.");
-console.log("\n\nThe number of people were to be invited was " + sr.length);
+/*
+Dinner Guests: Working with one of the programs from exercise 14 through 18, print a message indicating the
+number of people you are inviting to dinner.
+
+*/
+var sr4 = ["Zubair", "Farooq", "Farooq", "Awais", "Zeeshan", "Adil", "Ahatishan"];
+sr4.splice(0, 0, "Ahmed Nawaz");
+sr4.unshift("Ali Hyder");
+sr4.push("Atif");
+console.log("\n\tThe total number of people invited to the dinner was ".concat(sr4.length));
