@@ -1,4 +1,4 @@
-var trans = ["Honda", "Yamaha", "Hi Speed", "Toyota"];
+let trans = ["Honda", "Yamaha", "Hi Speed", "Toyota"];
 
 console.log("I want to buy " + trans[0] + " CD70 motorcycle");
 console.log("but I can not afford it now");
