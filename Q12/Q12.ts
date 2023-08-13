@@ -2,8 +2,8 @@
 print a message to them. The text of each message should be the same, but each message should be personalized 
 with the person’s name.*/
 
-var st = ["Zubair Ali", "Farooq Brohi", "Farooq Nindwani", "Awais Pirzado", "Adil Brohi"]
-var str = "Hello, How are you, ";
+let st = ["Zubair Ali", "Farooq Brohi", "Farooq Nindwani", "Awais Pirzado", "Adil Brohi"]
+let str = "Hello, How are you, ";
 
 console.log(str + st[0] + "?");
 console.log(str + st[1] + "?");
