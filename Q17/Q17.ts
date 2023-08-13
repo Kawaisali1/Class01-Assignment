@@ -1,58 +1,42 @@
-/* More Guests: You just found a bigger dinner table, so now more space is available. Think of three more 
-guests to invite to dinner. */
+/* Shrinking Guest List: You just found out that your new dinner table won't arrive in time for the dinner, and 
+you have space for only two quests. 
 
-var sr = ["Zubair", "Farooq", "Farooq", "Awais", "Zeeshan", "Adil", "Ahatishan"];
+Start with your program from Exercise 16, Add a new line that prints a message saying that you can invite only 
+two people for dinner
 
-for (let i = 0; i <= sr.length; i++ ){
-    console.log(sr[i] + ", the dinning time is 8:00 PM. I would like you to be there on mentioned venue.");
-    
-}
+Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name 
+from your list, print a message to that person letting them know you're sorry you can't invite them to dinner.
+ 
+Print a message to each of each of the two people still on your list, letting them know they're still invited.
 
-console.log("\n\n");
+Remove the two last two names from your list, so you have an empty list. Print your list to make sure you 
+actually have an empty list at the end of your program.
 
-console.log(sr[0] + " would not be able to make it to the dinner.");
+*/
 
-console.log("\n\n");
+let sr3 = ["Zubair", "Farooq", "Farooq", "Awais", "Zeeshan", "Adil", "Ahatishan"];
+sr3.splice(0, 0, "Ahmed Nawaz");
+sr3.unshift("Ali Hyder");
+sr3.push("Atif");
 
-sr[0] = "Ahmed Nawaz";
-
-for(let i = 0; i <= sr.length; i++){
-    console.log(sr[i] + ", the dinning time is 8:00 PM. I would like you to be there on mentioned venue.");
-    
-} 
-
-// three more guest to added
-console.log("\nGuys, I have found a bigger dinning table, so I am inviting three more guest.\n\n");
-
-sr = ["Ali Hyder", "Ahmed Nawaz", "Farooq", "Farooq", "Khalid", "Awais", "Zeeshan", "Adil", "Ahatishan"];
-
-sr.push("Atif");
-
-for (let i = 0; i < sr.length; i++){
-console.log(sr[i])
-}
-
-console.log("You all are invited.\n");
-
-for(let i = -5; i <sr.length; i++ ){
-console.log(sr[sr.length - 1] + ", sorry to say I wouldn't be able to invite you.");
-sr.pop();
+for(let i = -5; i < sr3.length; i++ ){
+console.log(sr3[sr3.length - 1] + ", sorry to say I wouldn't be able to invite you.");
+sr3.pop();
 }
 console.log("\n");
 
-for(let i = 0; i <= sr.length - 1; i++){
-    console.log(sr[i]);
+for(let i = 0; i < sr3.length; i++){
+    console.log(sr3[i]);
 }
 console.log("You both are considered for dinner.");
 
-sr.pop();
-sr.pop();
+sr3.pop();
+sr3.pop();
 
 console.log("\n");
 
 for(let i = 0; i == 0; i++){
-console.log(sr[i]);
+console.log(sr3[i]);
 }
-
 
 console.log("\nSorry there will be no dinner today because of personal reasons.");
