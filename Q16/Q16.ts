@@ -1,35 +1,31 @@
 /* More Guests: You just found a bigger dinner table, so now more space is available. Think of three more 
-guests to invite to dinner. */
+guests to invite to dinner.
 
-var sr = ["Zubair", "Farooq", "Farooq", "Awais", "Zeeshan", "Adil", "Ahatishan"];
+Start with your program from Exercise 15. Add a print statement to the end of your program informing people that
+you found a bigger dinner table.
 
-for (let i = 0; i <= sr.length; i++ ){
-    console.log(sr[i] + ", the dinning time is 8:00 PM. I would like you to be there on mentioned venue.");
-    
-}
+Add one new quest to the beginning of the array
 
-console.log("\n\n");
+Add one new quest to the middle of your array. Use append() to add one new quest to the end of your list.
 
-console.log(sr[0] + " would not be able to make it to the dinner.");
+Print a new set of invitation messages, one for each person in your list.
+*/
+   
 
-console.log("\n\n");
+let sr2 = ["Zubair", "Farooq", "Farooq", "Awais", "Zeeshan", "Adil", "Ahatishan"];
 
-sr[0] = "Ahmed Nawaz";
-
-for(let i = 0; i <= sr.length; i++){
-    console.log(sr[i] + ", the dinning time is 8:00 PM. I would like you to be there on mentioned venue.");
-    
-} 
+sr2.splice(0, 0, "Ahmed Nawaz");
 
 // three more guest to added
+
 console.log("\nGuys, I have found a bigger dinning table, so I am inviting three more guest.\n\n");
 
-sr = ["Ali Hyder", "Ahmed Nawaz", "Farooq", "Farooq", "Khalid", "Awais", "Zeeshan", "Adil", "Ahatishan"];
+sr2.unshift("Ali Hyder");
+sr2.splice(4, 0, "Farooq", "Atta Muhammad")
+sr2.push("Atif");
 
-sr.push("Atif");
-
-for (let i = 0; i < sr.length; i++){
-console.log(sr[i])
+for (let i = 0; i < sr2.length; i++){
+console.log(sr2[i])
 }
 
 console.log("You all are invited.");
